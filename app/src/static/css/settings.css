@@ -1,0 +1,40 @@
+#settings-landing {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+#settings-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#settings-panel {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+#settings-sidepanel {
+    width: 30%;
+    padding: 0px 50px;
+    background-color: #473763;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 11;
+}
+
+.settings-selectpanel {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 70%;
+    background-color: #B5A1C6;
+    z-index: 12;
+}

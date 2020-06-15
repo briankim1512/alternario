@@ -1,0 +1,115 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+    font-family: bungee;
+    color: white;
+    background-color: #473763;
+}
+
+/* bungee-regular - latin */
+@font-face {
+    font-family: 'bungee';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bungee-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Bungee'), local('Bungee-Regular'),
+            url('../fonts/bungee-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/bungee-v5-latin-regular.svg#Bungee') format('svg'); /* Legacy iOS */
+}
+
+h1 {font-size: 4em;}
+h2 {font-size: 3em;}
+h3 {font-size: 2.5em;}
+h4 {font-size: 1.8em;}
+
+#main-landing div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.left-side-div {
+    position: absolute;
+    height:100%;
+    left: 0%;
+    transition: left 0.5s;
+    background-color: #473763;
+}
+
+.left-side-div-hide {
+    left: -50%;
+}
+
+.right-side-div {
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    background-color: #B5A1C6;
+    transition: right 0.5s;
+}
+
+.right-side-div-hide {
+    right: -50%;
+}
+
+
+.landing {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+.horizontally-center-div {width: 100%;}
+
+.vertically-center-div {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.full-height {height: 100%;}
+
+.full-frame {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+.inline-block {display: inline-block;}
+
+.half-div {width:50%}
+
+.underlined {
+    padding: 0px;
+    border-bottom: 5px solid yellow;
+    position: relative;
+    top: 50%;
+    transform: translateY(-70%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.no-margin {margin: 0px;}
+
+.content-block {padding-bottom: 30px;}
+
+.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.credits {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    user-select: none;
+    cursor: default;
+}
+

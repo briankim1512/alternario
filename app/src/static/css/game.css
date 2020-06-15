@@ -1,0 +1,93 @@
+#game-landing {
+    display: none;
+    opacity: 0;
+}
+
+#status-panel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#settings-cog {
+    filter: invert(1);
+    position: relative;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+#settings-cog img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#profile-entry {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+#general-chat {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+
+.chat-box {
+    height: 400px;
+    width: 275px;
+    background-color: white;
+}
+
+.chat-top-bar {
+    background-color: purple;
+    margin: 3px;
+    padding-left: 10px;
+    font-size: 19px;
+}
+
+.incoming-chat {
+    background-color: #DDD;
+    height: 300px;
+    margin: 0px 3px;
+}
+
+.outbound-chat {
+    margin: 3px;
+}
+
+.chat-input {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.status-group {
+    height: 40px;
+    margin-left: 25px;
+}
+
+.status-group h4 {
+    cursor: default;
+    user-select: none;
+}
+
+.status-bar {
+    -webkit-appearance: none;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.status-bar::-webkit-progress-bar {
+    background-color: white;
+}
+
+.status-bar::-webkit-progress-value {
+    background-color: #B5A1C6;
+}
