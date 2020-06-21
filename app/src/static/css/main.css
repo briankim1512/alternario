@@ -17,99 +17,30 @@ body {
             url('../fonts/bungee-v5-latin-regular.svg#Bungee') format('svg'); /* Legacy iOS */
 }
 
-h1 {font-size: 4em;}
-h2 {font-size: 3em;}
-h3 {font-size: 2.5em;}
-h4 {font-size: 1.8em;}
+h1 {font-size: 4em; margin: 0;}
+h2 {font-size: 3em; margin: 0;}
+h3 {font-size: 2.5em; margin: 0;}
+h4 {font-size: 1.8em; margin: 0;}
 
-#main-landing div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+#main-options {
     text-align: center;
 }
 
-.left-side-div {
-    position: absolute;
-    height:100%;
-    left: 0%;
-    transition: left 0.5s;
-    background-color: #473763;
+.flex-even-space {
+    flex-basis: 0;
+    flex-grow: 1;
 }
 
-.left-side-div-hide {
-    left: -50%;
+.flex-hv-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.right-side-div {
-    position: absolute;
-    height: 100%;
-    right: 0px;
-    background-color: #B5A1C6;
-    transition: right 0.5s;
-}
-
-.right-side-div-hide {
-    right: -50%;
-}
-
 
 .landing {
+    display: flex;
     position: absolute;
     top: 0%;
     height: 100%;
     width: 100%;
 }
-
-.horizontally-center-div {width: 100%;}
-
-.vertically-center-div {
-    position: relative;
-    top: 50%;
-    transform: translateY(50%);
-}
-
-.full-height {height: 100%;}
-
-.full-frame {
-    position: absolute;
-    top: 0%;
-    height: 100%;
-    width: 100%;
-}
-
-.inline-block {display: inline-block;}
-
-.half-div {width:50%}
-
-.underlined {
-    padding: 0px;
-    border-bottom: 5px solid yellow;
-    position: relative;
-    top: 50%;
-    transform: translateY(-70%);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.no-margin {margin: 0px;}
-
-.content-block {padding-bottom: 30px;}
-
-.clickable {
-    cursor: pointer;
-    user-select: none;
-}
-
-.credits {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    user-select: none;
-    cursor: default;
-}
-
