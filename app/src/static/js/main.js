@@ -36,3 +36,7 @@ document.getElementById('play-main').addEventListener('click', function () {
         typeLogin()
     }, 500)
 })
+
+document.addEventListener('mouseover', function(){
+    document.getElementsByTagName('audio')[0].play()
+});

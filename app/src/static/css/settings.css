@@ -22,9 +22,20 @@
 }
 
 #settings-options {
+    box-sizing: border-box;
+    padding-top: 30px;
     height: 100%;
     flex-grow: 1;
     background-color: #B5A1C6;
     border-radius: 0px 10px 10px 0px;
     z-index: 12;
+}
+
+.settings-option {
+    width: 450px;
+    margin-left: 50px;
+}
+
+.settings-option h3 {
+    margin: 10px 10px;
 }

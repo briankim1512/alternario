@@ -31,6 +31,9 @@ document.getElementsByClassName('player-container')[3].addEventListener('click',
     alert('Looking at profiles for other players still in development!')
 })
 
+document.getElementsByClassName('player-container')[4].addEventListener('click', function () {
+    profileLanding.style.display = 'flex'
+})
 
 document.getElementById('tetris').addEventListener('click', function () {
     alert('The tetris minigame is still in development!')

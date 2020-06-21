@@ -11,6 +11,12 @@ h2 {font-size: 3em;}
 h3 {font-size: 2.5em;}
 h4 {font-size: 1.8em;}
 
+#brightness-overlay {
+    pointer-events: none;
+    background-color: rgba(0,0,0,0);
+    z-index: 100;
+}
+
 .flex-even-space {
     flex-basis: 0;
     flex-grow: 1;

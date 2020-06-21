@@ -4,6 +4,10 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"></head>
         <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}"></head>
     <body>
+        <div id="brightness-overlay" class="full-frame"></div>
+        <audio autoplay loop>
+            <source src="{% static 'aud/bgm.mp3' %}" type="audio/mp3">
+        </audio>
         <div id="main-landing" class="landing flex-hv-center">
             <div class="flex-even-space flex-hv-center main-left">
                 <h1 class="main-title-underline cursor-default">ALTERNAR.IO</h1>
@@ -148,7 +152,16 @@
                         <h3 id="display-settings-link" class="cursor-clickable">DISPLAY</h3>
                         <h3 id="social-settings-link" class="cursor-clickable">SOCIAL</h3>
                     </div>
-                    <div id="settings-options"></div>
+                    <div id="settings-options">
+                        <div class="flex-inline settings-option">
+                            <h3>Brightness</h3>
+                            <input type="range" min="0" max="100" value="100" id="brightness-range">
+                        </div>
+                        <div class="flex-inline settings-option">
+                            <h3>BGM Volume</h3>
+                            <input type="range" min="0" max="100" value="80" id="bgm-volume-range">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="settings-background" class="full-frame cursor-clickable"></div>
@@ -168,5 +181,6 @@
         <script src="{% static 'js/login.js' %}"></script>
         <script src="{% static 'js/game.js' %}"></script>
         <script src="{% static 'js/profile.js' %}"></script>
+        <script src="{% static 'js/settings.js' %}"></script>
     </body>
 </html>
