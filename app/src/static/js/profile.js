@@ -1,7 +1,7 @@
-profileEntry.addEventListener('click', function () {
+document.getElementById('profile-entry').addEventListener('click', function () {
     profileLanding.style.display = 'block'
 })
 
-profileBackground.addEventListener('click', function () {
+document.getElementById('profile-background').addEventListener('click', function () {
     profileLanding.style.display = 'none'
 })
