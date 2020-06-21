@@ -1,5 +1,3 @@
-let settingsCog = document.getElementById('settings-cog')
-
-settingsCog.addEventListener('click', function () {
+document.getElementById('settings-cog').addEventListener('click', function () {
     settingsLanding.style.display = 'block'
 })

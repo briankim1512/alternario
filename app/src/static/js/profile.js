@@ -1,7 +1,5 @@
-document.getElementById('profile-entry').addEventListener('click', function () {
-    profileLanding.style.display = 'block'
-})
-
-document.getElementById('profile-background').addEventListener('click', function () {
-    profileLanding.style.display = 'none'
-})
+setLandingToggle(
+    profileLanding,
+    document.getElementById('profile-entry'),
+    document.getElementById('profile-background')
+)

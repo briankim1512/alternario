@@ -5,21 +5,26 @@ let creditsLanding = document.getElementById('credits-landing')
 let gameLanding = document.getElementById('game-landing')
 let profileLanding = document.getElementById('profile-landing')
 
-document.getElementById('settings-main').addEventListener('click', function () {
-    settingsLanding.style.display = 'block'
-})
+function setLandingToggle (landingTarget, onToggle, offToggle, displayType='block') {
+    onToggle.addEventListener('click', function () {
+        landingTarget.style.display = displayType
+    })
+    offToggle.addEventListener('click', function () {
+        landingTarget.style.display = 'none'
+    })
+}
 
-document.getElementById('settings-background').addEventListener('click', function () {
-    settingsLanding.style.display = 'none'
-})
+setLandingToggle(
+    settingsLanding,
+    document.getElementById('settings-main'),
+    document.getElementById('settings-background')
+)
 
-document.getElementById('credits-main').addEventListener('click', function () {
-    creditsLanding.style.display = 'block'
-})
-
-document.getElementById('credits-overlay').addEventListener('click', function () {
-    creditsLanding.style.display = 'none'
-})
+setLandingToggle(
+    creditsLanding,
+    document.getElementById('credits-main'),
+    document.getElementById('credits-overlay')
+)
 
 document.getElementById('play-main').addEventListener('click', function () {
     mainLanding.getElementsByTagName('div')[0].classList.add('main-left-hide')
