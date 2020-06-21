@@ -38,8 +38,13 @@
         </div>
         <div id="game-landing" class="landing">
             <link rel="stylesheet" type="text/css" href="{% static 'css/game.css' %}">
-            <div id="game-panel"></div>
-            <div id="group-chat"></div>
+            <link rel="stylesheet" type="text/css" href="{% static 'css/game-panel.css' %}">
+            <div id="game-panel" class="full-frame">
+                <div id="platform-1" class="ground"></div>
+                <div id="platform-2" class="platform"></div>
+                <div id="platform-3" class="platform"></div>
+                <div id="platform-4" class="platform"></div>
+            </div>
             <div id="status-panel" class="flex-inline">
                 <div id="profile-entry" class="cursor-clickable">
                     <img src="https://i.ibb.co/vx9Xdjc/verity.png">
@@ -59,10 +64,20 @@
                 </div>
             </div>
             <div id="general-chat" class="chat-box">
-                <div class="chat-top-bar cursor-default">
+                <div id="general-chat-bar" class="chat-top-bar cursor-clickable">
                     <p>General Chat</p>
                 </div>
-                <div class="incoming-chat"></div>
+                <div class="incoming-chat">
+                    <p>verity: where's tetris?</p>
+                    <p>ligma: over there to the right :P</p>
+                    <p>verity: ah thanx</p>
+                    <p>xXflapXx: lf 1 friend 2 play flappy</p>
+                    <p>tier3sub: nope not me</p>
+                    <p>hannity41: lmao that name</p>
+                    <p>tier3sub: not a filthy tier 1</p>
+                    <p>ligma: lies</p>
+                    <p>verity: lf 3 friends 2 play tetris</p>
+                </div>
                 <div class="outbound-chat">
                     <input type="text" class="chat-input">
                 </div>
