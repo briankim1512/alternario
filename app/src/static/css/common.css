@@ -1,26 +1,15 @@
-/* bungee-regular - latin */
-@font-face {
-    font-family: 'bungee';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/bungee-v5-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Bungee'), local('Bungee-Regular'),
-        url('../fonts/bungee-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/bungee-v5-latin-regular.svg#Bungee') format('svg'); /* Legacy iOS */
-}
-
 body {
     overflow: hidden;
     margin: 0px;
-    font-family: bungee;
+    font-family: sans-serif;
     color: white;
     background-color: #473763;
 }
 
-h1 {font-size: 4em; margin: 0;}
-h2 {font-size: 3em; margin: 0;}
-h3 {font-size: 2.5em; margin: 0;}
-h4 {font-size: 1.8em; margin: 0;}
+h1 {font-size: 4em;}
+h2 {font-size: 3em;}
+h3 {font-size: 2.5em;}
+h4 {font-size: 1.8em;}
 
 .flex-even-space {
     flex-basis: 0;
@@ -59,3 +48,5 @@ h4 {font-size: 1.8em; margin: 0;}
     cursor: pointer;
     user-select: none;
 }
+
+.no-margin {margin: 0;}

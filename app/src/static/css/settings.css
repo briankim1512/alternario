@@ -12,8 +12,8 @@
 
 #settings-panel {
     display: flex;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     border: 5px solid white;
     border-radius: 15px;
 }

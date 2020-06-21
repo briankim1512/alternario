@@ -10,9 +10,9 @@
             </div>
             <div class="flex-even-space flex-hv-center main-right">
                 <div id="main-options">
-                    <h2 id="play-main" class="cursor-clickable no-margin">PLAY</h2>
-                    <h3 id="settings-main" class="cursor-clickable no-margin">Settings</h3>
-                    <h3 id="credits-main" class="cursor-clickable no-margin">Credits</h3>
+                    <h2 id="play-main" class="cursor-clickable">PLAY</h2>
+                    <h3 id="settings-main" class="cursor-clickable">Settings</h3>
+                    <h3 id="credits-main" class="cursor-clickable">Credits</h3>
                 </div>
             </div>
         </div>
@@ -21,17 +21,17 @@
             <div id="login-overlay" class="full-frame"></div>
             <div id="login-panel" class="flex-hv-center">
                 <div class="username-block flex-inline">
-                    <h4>Username</h4>
+                    <h4 class="login-margin">Username</h4>
                     <input id="username-input" type="text" class="login-input">
                 </div>
                 <div class="password-block flex-inline">
-                    <h4>Password</h4>
+                    <h4 class="login-margin">Password</h4>
                     <input id="password-input" type="password" class="login-input">
                 </div>
                 <button class="login-button">LOGIN</button>
                 <div id="login-seperator"></div>
                 <div class="signup-block">
-                    <h4 class="no-margin">Don't have an account?</h4>
+                    <h4 class="login-margin">Don't have an account?</h4>
                     <button class="login-button signup-button">SIGN UP</button>
                 </div>
             </div>
@@ -40,24 +40,28 @@
             <link rel="stylesheet" type="text/css" href="{% static 'css/game.css' %}">
             <div id="game-panel"></div>
             <div id="group-chat"></div>
-            <div id="status-panel">
-                <div id="sp-status" class="status-group">
-                    <h4 class="no-margin inline-block">SP</h4>
-                    <progress id="sp-bar" class="status-bar" value="65" max="100"></progress>
+            <div id="status-panel" class="flex-inline">
+                <div id="profile-entry" class="cursor-clickable">
+                    <img src="https://i.ibb.co/vx9Xdjc/verity.png">
                 </div>
-                <div id="xp-status" class="status-group">
-                    <h4 class="no-margin inline-block">XP</h4>
-                    <progress id="xp-bar" class="status-bar" value="20" max="100"></progress>
+                <div id="status-group-conatiner">
+                    <div id="sp-status" class="status-group flex-inline">
+                        <h4 class="no-margin">SP</h4>
+                        <progress id="sp-bar" class="status-bar" value="65" max="100"></progress>
+                    </div>
+                    <div id="xp-status" class="status-group flex-inline">
+                        <h4 class="no-margin">XP</h4>
+                        <progress id="xp-bar" class="status-bar" value="20" max="100"></progress>
+                    </div>
+                    <div id="settings-cog" class="cursor-clickable">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/administrative-tools.png"/>
+                    </div>
                 </div>
-                <div id="settings-cog">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/administrative-tools.png"/>
-                </div>
-            </div>
-            <div id="profile-entry">
-                <img src="https://i.ibb.co/vx9Xdjc/verity.png">
             </div>
             <div id="general-chat" class="chat-box">
-                <div class="chat-top-bar">General Chat</div>
+                <div class="chat-top-bar cursor-default">
+                    <p>General Chat</p>
+                </div>
                 <div class="incoming-chat"></div>
                 <div class="outbound-chat">
                     <input type="text" class="chat-input">
@@ -92,11 +96,11 @@
             <div id="settings-container" class="full-frame flex-hv-center">
                 <div id="settings-panel">
                     <div id="settings-sidepanel">
-                        <h3 id="gameplay-settings-link" class="cursor-clickable no-margin">GAMEPLAY</h3>
-                        <h3 id="controls-settings-link" class="cursor-clickable no-margin">CONTROLS</h3>
-                        <h3 id="audio-settings-link" class="cursor-clickable no-margin">AUDIO</h3>
-                        <h3 id="display-settings-link" class="cursor-clickable no-margin">DISPLAY</h3>
-                        <h3 id="social-settings-link" class="cursor-clickable no-margin">SOCIAL</h3>
+                        <h3 id="gameplay-settings-link" class="cursor-clickable">GAMEPLAY</h3>
+                        <h3 id="controls-settings-link" class="cursor-clickable">CONTROLS</h3>
+                        <h3 id="audio-settings-link" class="cursor-clickable">AUDIO</h3>
+                        <h3 id="display-settings-link" class="cursor-clickable">DISPLAY</h3>
+                        <h3 id="social-settings-link" class="cursor-clickable">SOCIAL</h3>
                     </div>
                     <div id="settings-options"></div>
                 </div>
