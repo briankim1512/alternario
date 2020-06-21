@@ -26,8 +26,12 @@
     transition: height 0.5s;
 }
 
+#settings-cog {
+    filter: invert(1);
+    margin-top: 5px;
+}
+
 #general-chat div {margin: 3px;}
-#settings-cog {filter: invert(1);}
 #profile-entry img {height: 150px;}
 
 .status-bar {

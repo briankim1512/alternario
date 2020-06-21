@@ -14,3 +14,24 @@ document.getElementById('general-chat-bar').addEventListener('click', function (
         generalChatStatus = true
     }
 })
+
+document.getElementsByClassName('player-container')[0].addEventListener('click', function () {
+    alert('Looking at profiles for other players still in development!')
+})
+
+document.getElementsByClassName('player-container')[1].addEventListener('click', function () {
+    alert('Looking at profiles for other players still in development!')
+})
+
+document.getElementsByClassName('player-container')[2].addEventListener('click', function () {
+    alert('Looking at profiles for other players still in development!')
+})
+
+document.getElementsByClassName('player-container')[3].addEventListener('click', function () {
+    alert('Looking at profiles for other players still in development!')
+})
+
+
+document.getElementById('tetris').addEventListener('click', function () {
+    alert('The tetris minigame is still in development!')
+})
