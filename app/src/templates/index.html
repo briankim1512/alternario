@@ -88,19 +88,19 @@
         </div>
         <div id="settings-landing" class="landing">
             <link rel="stylesheet" type="text/css" href="{% static 'css/settings.css' %}">
-            <div id="settings-background" class="clickable"></div>
-            <div id="settings-panel">
-                <div id="settings-sidepanel" class="full-height inline-block">
-                    <h3 id="gameplay-settings-link" class="clickable no-margin">GAMEPLAY</h3>
-                    <h3 id="controls-settings-link" class="clickable no-margin">CONTROLS</h3>
-                    <h3 id="audio-settings-link" class="clickable no-margin">AUDIO</h3>
-                    <h3 id="display-settings-link" class="clickable no-margin">DISPLAY</h3>
-                    <h3 id="social-settings-link" class="clickable no-margin">SOCIAL</h3>
-                </div>
-                <div id="general-settings-div" class="settings-selectpanel inline-block">
-                    
+            <div id="settings-container" class="full-frame flex-hv-center">
+                <div id="settings-panel">
+                    <div id="settings-sidepanel">
+                        <h3 id="gameplay-settings-link" class="clickable no-margin">GAMEPLAY</h3>
+                        <h3 id="controls-settings-link" class="clickable no-margin">CONTROLS</h3>
+                        <h3 id="audio-settings-link" class="clickable no-margin">AUDIO</h3>
+                        <h3 id="display-settings-link" class="clickable no-margin">DISPLAY</h3>
+                        <h3 id="social-settings-link" class="clickable no-margin">SOCIAL</h3>
+                    </div>
+                    <div id="settings-options"></div>
                 </div>
             </div>
+            <div id="settings-background" class="clickable"></div>
         </div>
         <div id="credits-landing" class="landing">
             <link rel="stylesheet" type="text/css" href="{% static 'css/credits.css' %}">

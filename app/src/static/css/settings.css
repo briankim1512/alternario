@@ -11,30 +11,26 @@
 }
 
 #settings-panel {
-    position: relative;
+    display: flex;
     width: 80%;
     height: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: 5px solid white;
     border-radius: 15px;
 }
 
 #settings-sidepanel {
-    width: 30%;
+    height: 100%;
+    flex-grow: 0;
     padding: 0px 50px;
     background-color: #473763;
     border-radius: 20px 0px 0px 20px;
     z-index: 11;
 }
 
-.settings-selectpanel {
-    position: absolute;
-    top: 0%;
-    right: 0%;
+#settings-options {
     height: 100%;
-    width: 70%;
+    flex-grow: 1;
     background-color: #B5A1C6;
+    border-radius: 0px 10px 10px 0px;
     z-index: 12;
 }
