@@ -44,3 +44,22 @@ h4 {font-size: 1.8em; margin: 0;}
     height: 100%;
     width: 100%;
 }
+
+.main-right {
+    background-color: #B5A1C6;
+    height: 100%;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.title-underline {
+    border-bottom: solid gold 5px;
+    box-sizing: border-box;
+}
