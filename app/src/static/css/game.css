@@ -45,7 +45,7 @@
     box-sizing: border-box;
     padding-left: 10px;
     height: 50px;
-    background-color: gold;
+    background-color: #FFD200;
     font-size: 30px;
     font-weight: 700;
     border-radius: 5px 5px 0px 0px;
@@ -63,6 +63,6 @@
     font-size: 20px;
     font-weight: 600;
     color: white;
-    background-color: gold;
+    background-color: #FFD200;
     border: none;
 }

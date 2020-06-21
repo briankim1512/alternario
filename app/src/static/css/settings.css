@@ -4,16 +4,10 @@
     z-index: 10;
 }
 
-#settings-background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
 #settings-panel {
     display: flex;
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 70%;
     border: 5px solid white;
     border-radius: 15px;
 }
@@ -23,7 +17,7 @@
     flex-grow: 0;
     padding: 0px 50px;
     background-color: #473763;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     z-index: 11;
 }
 

@@ -1,57 +1,57 @@
-#profile-landing {display: none;}
-
-#profile-background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+#profile-landing {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 #profile-panel {
-    position: relative;
-    width: 65%;
-    height: 65%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 420px;
     border: 5px solid white;
     border-radius: 15px;
+    background-color: #FFD200;
 }
 
 #profile-sidepanel {
-    width: 25%;
-    padding: 0px 50px;
-    background-color: #473763;
-    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 140px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
     z-index: 11;
 }
 
-#general-profile-div {
-    position: absolute;
-    top: 0%;
-    right: 0%;
+#profile-items {
     height: 100%;
-    width: 75%;
-    background-color: #B5A1C6;
-    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#xp-profile-bar {margin: 0px;}
-
-#xp-profile-bar::-webkit-progress-value {background-color: #DE37C8;}
+#profile-details {
+    flex-grow: 1;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 11;
+}
 
 .profile-item {
-    margin-top: 40px;
-    width: 125px;
     height: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #B5A1C6;
-    border-radius: 20px;
+    width: 125px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
 }
 
-.profile-avatar {margin-left: 50px;}
+.profile-title {
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #34115E
+}
 
-.profile-info {margin-left: 50px;}
+.profile-details-container {width: 85%;}
 
-.profile-title {color: #473763;}
+.profile-status-bar-container {justify-content: flex-start;}
+.profile-status-bar::-webkit-progress-value {background-color: #DE37C8;}

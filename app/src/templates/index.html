@@ -45,13 +45,13 @@
                     <img src="https://i.ibb.co/vx9Xdjc/verity.png">
                 </div>
                 <div id="status-group-conatiner">
-                    <div id="sp-status" class="status-group flex-inline">
-                        <h4 class="no-margin">SP</h4>
-                        <progress id="sp-bar" class="status-bar" value="65" max="100"></progress>
-                    </div>
                     <div id="xp-status" class="status-group flex-inline">
                         <h4 class="no-margin">XP</h4>
                         <progress id="xp-bar" class="status-bar" value="20" max="100"></progress>
+                    </div>
+                    <div id="sp-status" class="status-group flex-inline">
+                        <h4 class="no-margin">SP</h4>
+                        <progress id="sp-bar" class="status-bar" value="65" max="100"></progress>
                     </div>
                     <div id="settings-cog" class="cursor-clickable">
                         <img src="https://img.icons8.com/ios-filled/50/000000/administrative-tools.png"/>
@@ -68,28 +68,40 @@
                 </div>
             </div>
         </div>
-        <div id="profile-landing" class="landing">
+        <div id="profile-landing" class="landing flex-hv-center">
             <link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
-            <div id="profile-background" class="clickable"></div>
-            <div id="profile-panel">
-                <div id="profile-sidepanel" class="full-height inline-block">
-                    <div class="profile-item"><img src="https://img.icons8.com/ios-filled/100/000000/ingredients.png"/></div>
-                    <div class="profile-item"><img src="https://img.icons8.com/ios-filled/100/000000/bento.png"/></div>
-                    <div class="profile-item"><img src="https://img.icons8.com/ios-filled/100/000000/new-product.png"/></div>
-                </div>
-                <div id="general-profile-div" class="inline-block">
-                    <h3 class="profile-title no-margin text-center">PROFILE</h3>
-                    <div class="profile-avatar inline-block">
-                        <img src="https://i.ibb.co/Hd9N8WH/verity.png">
+            <div id="profile-panel" class="flex-inline">
+                <div id="profile-sidepanel">
+                    <div id="profile-items">
+                        <div class="profile-item flex-hv-center"><img src="https://img.icons8.com/ios-filled/100/000000/ingredients.png"/></div>
+                        <div class="profile-item flex-hv-center"><img src="https://img.icons8.com/ios-filled/100/000000/bento.png"/></div>
+                        <div class="profile-item flex-hv-center"><img src="https://img.icons8.com/ios-filled/100/000000/new-product.png"/></div>
                     </div>
-                    <div class="profile-info inline-block">
-                        <h3 class="no-margin">NAME: VERITY</h3>
-                        <h3 class="no-margin">LV: 5</h3>
-                        <h3 class="no-margin">EXP</h3>
-                        <progress id="xp-profile-bar" class="status-bar" value="20" max="100"></progress>
+                </div>
+                <div id="profile-details">
+                    <h2 class="profile-title">PROFILE</h2>
+                    <div class="flex-hv-center">
+                        <div class="profile-details-container flex-inline">
+                            <div class="profile-avatar">
+                                <img src="https://i.ibb.co/Hd9N8WH/verity.png">
+                            </div>
+                            <div class="profile-info">
+                                <h3 class="no-margin">NAME: VERITY</h3>
+                                <h3 class="no-margin">LV: 5</h3>
+                                <div class="flex-inline profile-status-bar-container">
+                                    <h3 class="no-margin">XP</h3>
+                                    <progress id="xp-profile-bar" class="status-bar profile-status-bar" value="20" max="100"></progress>
+                                </div>
+                                <div class="flex-inline profile-status-bar-container">
+                                    <h3 class="no-margin">SP</h3>
+                                    <progress id="sp-profile-bar" class="status-bar profile-status-bar" value="65" max="100"></progress>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div id="profile-background" class="full-frame cursor-clickable"></div>
         </div>
         <div id="settings-landing" class="landing">
             <link rel="stylesheet" type="text/css" href="{% static 'css/settings.css' %}">
@@ -105,7 +117,7 @@
                     <div id="settings-options"></div>
                 </div>
             </div>
-            <div id="settings-background" class="cursor-clickable"></div>
+            <div id="settings-background" class="full-frame cursor-clickable"></div>
         </div>
         <div id="credits-landing" class="landing">
             <link rel="stylesheet" type="text/css" href="{% static 'css/credits.css' %}">

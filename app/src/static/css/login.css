@@ -7,8 +7,8 @@
 
 #login-panel {
     flex-direction: column;
-    width: 50%;
-    height: 50%;
+    width: 620px;
+    height: 375px;
     border: 5px solid white;
     border-radius: 15px;
     background-color: #B5A1C6;

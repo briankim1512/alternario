@@ -1,5 +1,6 @@
 setLandingToggle(
     profileLanding,
     document.getElementById('profile-entry'),
-    document.getElementById('profile-background')
+    document.getElementById('profile-background'),
+    'flex'
 )
