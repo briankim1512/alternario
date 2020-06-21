@@ -39,3 +39,11 @@
     background-image: url("/static/img/texture-concrete.png");
     background-size: cover;
 }
+
+#tetris {
+    position: absolute;
+    bottom: 250;
+    left: 900;
+}
+
+#tetris img {width: 150px;}

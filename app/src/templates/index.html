@@ -39,11 +39,30 @@
         <div id="game-landing" class="landing">
             <link rel="stylesheet" type="text/css" href="{% static 'css/game.css' %}">
             <link rel="stylesheet" type="text/css" href="{% static 'css/game-panel.css' %}">
+            <link rel="stylesheet" type="text/css" href="{% static 'css/game-player.css' %}">
             <div id="game-panel" class="full-frame">
                 <div id="platform-1" class="ground"></div>
                 <div id="platform-2" class="platform"></div>
                 <div id="platform-3" class="platform"></div>
                 <div id="platform-4" class="platform"></div>
+                <div id="player-1" class="player-container">
+                    <img src="{% static 'img/player/player-1.png' %}">
+                </div>
+                <div id="player-2" class="player-container">
+                    <img src="{% static 'img/player/player-2.png' %}">
+                </div>
+                <div id="player-3" class="player-container">
+                    <img src="{% static 'img/player/player-3.png' %}">
+                </div>
+                <div id="player-4" class="player-container">
+                    <img src="{% static 'img/player/player-4.png' %}">
+                </div>
+                <div id="player-5" class="player-container">
+                    <img src="{% static 'img/player/player-5.png' %}">
+                </div>
+                <div id="tetris">
+                    <img src="{% static 'img/tetris.png' %}">
+                </div>
             </div>
             <div id="status-panel" class="flex-inline">
                 <div id="profile-entry" class="cursor-clickable">
