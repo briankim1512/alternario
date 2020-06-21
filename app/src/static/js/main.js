@@ -38,7 +38,7 @@ creditsOverlay.addEventListener('click', function () {
 playMain.addEventListener('click', function () {
     leftMainLanding.classList.add('main-left-hide')
     rightMainLanding.classList.add('main-right-hide')
-    loginLanding.style.display = 'block'
+    loginLanding.style.display = 'flex'
     setTimeout(function() {
         mainLanding.style.display = 'none'
         loginLanding.style.zIndex = 1

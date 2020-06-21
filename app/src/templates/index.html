@@ -16,16 +16,16 @@
                 </div>
             </div>
         </div>
-        <div id="login-landing" class="landing">
+        <div id="login-landing" class="landing flex-hv-center">
             <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
             <div id="login-overlay" class="full-frame"></div>
-            <div id="login-panel">
-                <div class="username-block">
-                    <h4 class="inline-block no-margin">Username</h4>
+            <div id="login-panel" class="flex-hv-center">
+                <div class="username-block flex-inline">
+                    <h4>Username</h4>
                     <input id="username-input" type="text" class="login-input">
                 </div>
-                <div class="password-block">
-                    <h4 class="inline-block no-margin">Password</h4>
+                <div class="password-block flex-inline">
+                    <h4>Password</h4>
                     <input id="password-input" type="password" class="login-input">
                 </div>
                 <button class="login-button">LOGIN</button>

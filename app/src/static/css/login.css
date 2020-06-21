@@ -8,18 +8,9 @@
 }
 
 #login-panel {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
     width: 50%;
     height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     border: 5px solid white;
     border-radius: 15px;
     background-color: #B5A1C6;
@@ -48,9 +39,4 @@
     color: white;
 }
 
-.signup-button {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #652DC6;
-}
+.signup-button {background-color: #652DC6;}
