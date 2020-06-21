@@ -5,8 +5,8 @@
     font-weight: 400;
     src: url('../fonts/bungee-v5-latin-regular.eot'); /* IE9 Compat Modes */
     src: local('Bungee'), local('Bungee-Regular'),
-            url('../fonts/bungee-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('../fonts/bungee-v5-latin-regular.svg#Bungee') format('svg'); /* Legacy iOS */
+        url('../fonts/bungee-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/bungee-v5-latin-regular.svg#Bungee') format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -53,9 +53,7 @@ h4 {font-size: 1.8em; margin: 0;}
     width: 100vw;
 }
 
-.cursor-default {
-    cursor: default;
-}
+.cursor-default {cursor: default;}
 
 .cursor-clickable {
     cursor: pointer;

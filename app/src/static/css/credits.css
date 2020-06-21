@@ -4,8 +4,6 @@
     z-index: 10;
 }
 
-#credits-overlay {
-    z-index: 100;
-}
+#credits-overlay {z-index: 100;}
 
 #credits-container {flex-direction: column;}

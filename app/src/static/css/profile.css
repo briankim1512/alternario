@@ -1,6 +1,4 @@
-#profile-landing {
-    display: none;
-}
+#profile-landing {display: none;}
 
 #profile-background {
     position: absolute;
@@ -37,13 +35,9 @@
     z-index: 12;
 }
 
-#xp-profile-bar {
-    margin: 0px;
-}
+#xp-profile-bar {margin: 0px;}
 
-#xp-profile-bar::-webkit-progress-value {
-    background-color: #DE37C8;
-}
+#xp-profile-bar::-webkit-progress-value {background-color: #DE37C8;}
 
 .profile-item {
     margin-top: 40px;
@@ -56,14 +50,8 @@
     border-radius: 20px;
 }
 
-.profile-avatar {
-    margin-left: 50px;
-}
+.profile-avatar {margin-left: 50px;}
 
-.profile-info {
-    margin-left: 50px;
-}
+.profile-info {margin-left: 50px;}
 
-.profile-title {
-    color: #473763;
-}
+.profile-title {color: #473763;}

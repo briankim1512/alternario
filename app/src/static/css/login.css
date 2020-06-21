@@ -3,9 +3,7 @@
     z-index: -1;
 }
 
-#login-overlay {
-    z-index: 100;
-}
+#login-overlay {z-index: 100;}
 
 #login-panel {
     flex-direction: column;
